@@ -1,17 +1,19 @@
 {
   "type": "module",
   "scripts": {
+    "commit": "cz",
     "prepare": "husky",
     "add-husky-pre-commit": "echo \"npx lint-staged\" > .husky/pre-commit",
+    "add-husky-prepare-commit-msg": "echo \"exec < /dev/tty && npx cz --hook || true\" > .husky/prepare-commit-msg",
     "remove-husky-pre-commit": "rm .husky/pre-commit",
+    "remove-husky-prepare-commit-msg": "rm .husky/prepare-commit-msg",
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+      "pre-commit": "lint-staged"
     }
   },
   "config": {
