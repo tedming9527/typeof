@@ -2,13 +2,21 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
+    "add-husky-pre-commit": "echo \"npx lint-staged\" > .husky/pre-commit",
+    "remove-husky-pre-commit": "rm .husky/pre-commit",
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "lint-staged": {
@@ -24,6 +32,8 @@
     "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "5",
     "@typescript-eslint/parser": "5",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
