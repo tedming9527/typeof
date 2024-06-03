@@ -1,0 +1,9 @@
+{
+  "types": [
+    {
+       "type": "chore", 
+       "section": "Release",
+       "hidden": false
+   }
+  ]
+}
