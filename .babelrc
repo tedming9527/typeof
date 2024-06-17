@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "helpers": true,
+        "regenerator": true,
+        "version": "^7.12.5"
+      }
+    ]
+  ]
+}
