@@ -55,6 +55,7 @@ function isDate(val: any) {
     typeof val.toDateString === 'function' &&
     typeof val.getDate === 'function' &&
     typeof val.setDate === 'function'
+
   )
 }
 
