@@ -1,7 +1,6 @@
 {
   "name": "typeof",
   "version": "1.1.1",
-  "main": "index.js",
   "repository": "https://github.com/tedming9527/typeof.git",
   "author": "tedming9527 <tedming9527@gmail.com>",
   "license": "MIT",
@@ -19,6 +18,13 @@
   "lint-staged": {
     "*.(js|jsx|ts|tsx)": "eslint --cache --fix"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
+  "module": "src/index.ts",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/plugin-transform-runtime": "^7.24.7",
