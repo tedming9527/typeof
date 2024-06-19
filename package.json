@@ -22,8 +22,9 @@
     "src",
     "dist"
   ],
-  "main": "dist/bundle.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/bundle.js",
+  "module": "./dist/bundle.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     "*": {
       "import": "./dist/bundle.mjs",
