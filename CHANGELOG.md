@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/tedming9527/typeof/compare/v1.1.2...v1.1.3) (2024-06-19)
+
+
+### Bug Fixes
+
+* add mjs output ([90b0ba6](https://github.com/tedming9527/typeof/commit/90b0ba6297feaeab835219dcfcd38994448ba08a))
+
 ### [1.1.2](https://github.com/tedming9527/typeof/compare/v1.1.1...v1.1.2) (2024-06-19)
 
 
