@@ -10,6 +10,7 @@
     "commit": "cz",
     "build": "rollup -c",
     "test": "jest",
+    "release": "HUSKY=0 standard-version",
     "prepare": "husky",
     "add-husky-pre-commit": "echo npx lint-staged > .husky/pre-commit",
     "add-husky-commit-msg": "echo npx --no -- commitlint --edit \"$1\" > .husky/commit-msg",
@@ -44,6 +45,7 @@
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
     "rollup": "^4.18.0",
+    "standard-version": "^9.5.0",
     "tslib": "^2.6.3",
     "typescript": "^5.4.5"
   },
