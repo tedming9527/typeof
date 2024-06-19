@@ -24,7 +24,12 @@
   ],
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
-  "module": "src/index.ts",
+  "exports": {
+    "*": {
+      "import": "./dist/bundle.mjs",
+      "require": "./dist/bundle.js"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/plugin-transform-runtime": "^7.24.7",
