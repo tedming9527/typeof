@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/tedming9527/typeof/compare/v1.1.3...v1.1.4) (2024-06-19)
+
+
+### Bug Fixes
+
+* change main link ([49114a2](https://github.com/tedming9527/typeof/commit/49114a2a08de127744084e8695058e5e4c46441d))
+
 ### [1.1.3](https://github.com/tedming9527/typeof/compare/v1.1.2...v1.1.3) (2024-06-19)
 
 
