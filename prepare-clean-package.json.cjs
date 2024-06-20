@@ -12,11 +12,6 @@ packageJson.types = packageJson.types.replace('./dist/', './');
 packageJson['exports']['.']['import']= packageJson['exports']['.']['import'].replace('./dist/', './');
 packageJson['exports']['.']['require']= packageJson['exports']['.']['require'].replace('./dist/', './');
 
-const tempDir = path.resolve(__dirname, 'temp-publish');
-if (!fs.existsSync(tempDir)) {
-  fs.mkdirSync(tempDir);
-}
-
 ignoreFields.forEach(field => {
   delete packageJson[field];
 })

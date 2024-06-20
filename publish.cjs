@@ -4,7 +4,7 @@ const {execSync}  = require('child_process');
 
 const tempDir = path.resolve(__dirname, 'temp-publish');
 if (fs.existsSync(tempDir)) {
-  fs.rmdirSync(tempDir);
+  fs.removeSync(tempDir);
 }
 fs.mkdirSync(tempDir);
 
