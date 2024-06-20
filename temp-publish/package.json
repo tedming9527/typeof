@@ -1,0 +1,27 @@
+{
+  "name": "typeof",
+  "version": "1.1.5",
+  "repository": {
+    "url": "git+https://github.com/tedming9527/typeof.git"
+  },
+  "author": "tedming9527 <tedming9527@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "lint-staged": {
+    "*.(js|jsx|ts|tsx)": "eslint --cache --fix"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "main": "./bundle.js",
+  "module": "./bundle.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./bundle.mjs",
+      "require": "./bundle.js"
+    }
+  },
+  "dependencies": {}
+}
